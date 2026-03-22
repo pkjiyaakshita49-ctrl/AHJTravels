@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>European Travel Guide</title>
+
+<style>
+
+html{
+scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f5e2e9;
+    color: #333;
+}
+
+header {
+    background:url("IMAGES/destinationsbanner.jpeg")center/cover; 
+    color: rgb(0, 0, 0);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav {
+    background: #fe7cb0;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #bf3860;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgb(255, 166, 205);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card button{
+margin-top:10px;
+padding:5px 15px;
+border:none;
+background:#fbd0e0;
+color:rgb(5, 0, 0);
+font-size:14px;
+cursor:pointer;
+border-radius:4px;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.hotel-list {
+    margin-top: 10px;
+}
+
+.hotel-list li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Explore Europe</h1>
+    <p>Discover destinations, hotels & curated travel experiences</p>
+</header>
+
+<nav>
+    <a href="#destinations">Destinations</a>
+    <a href="#hotels">Hotels</a>
+    <a href="#trips">Trips</a>
+</nav>
+
+<section id="destinations">
+    <h2>Top Destinations in Europe</h2>
+    <div class="container">
+
+        <div class="card">
+            <h3>Paris, France</h3>
+            <p>The city of lights, famous for the Eiffel Tower, art, and romance.</p>
+        </div>
+
+        <div class="card">
+            <h3>Rome, Italy</h3>
+            <p>Ancient history meets vibrant culture with iconic landmarks.</p>
+        </div>
+
+        <div class="card">
+            <h3>Zurich, Switzerland</h3>
+            <p>Scenic beauty, lakes, and luxury experiences.</p>
+        </div>
+
+        <div class="card">
+            <h3>Barcelona, Spain</h3>
+            <p>Architecture, beaches, and a lively nightlife.</p>
+        </div>
+
+        <div class="card">
+            <h3>London, UK</h3>
+            <p>A mix of modern life and historic landmarks.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="hotels">
+    <h2>Hotels Across Europe (1⭐ – 5⭐)</h2>
+    <div class="container">
+
+        <div class="card">
+            <h3>Paris Hotels</h3>
+            <ul class="hotel-list">
+                <li>⭐ HotelF1 Paris Saint-Ouen (Budget)</li>
+                <li>⭐⭐ ibis Paris Montmartre</li>
+                <li>⭐⭐⭐ Hotel Le Relais Montmartre</li>
+                <li>⭐⭐⭐⭐ Novotel Paris Les Halles</li>
+                <li>⭐⭐⭐⭐⭐ Ritz Paris</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Rome Hotels</h3>
+            <ul class="hotel-list">
+                <li>⭐ Alessandro Palace Hostel</li>
+                <li>⭐⭐ Hotel Vienna Rome</li>
+                <li>⭐⭐⭐ Hotel Artemide</li>
+                <li>⭐⭐⭐⭐ NH Collection Roma Palazzo Cinquecento</li>
+                <li>⭐⭐⭐⭐⭐ Hotel Eden Rome</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Switzerland (Zurich)</h3>
+            <ul class="hotel-list">
+                <li>⭐ Zurich Youth Hostel</li>
+                <li>⭐⭐ ibis Budget Zurich Airport</li>
+                <li>⭐⭐⭐ Hotel Montana Zurich</li>
+                <li>⭐⭐⭐⭐ Crowne Plaza Zurich</li>
+                <li>⭐⭐⭐⭐⭐ Baur au Lac</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Barcelona Hotels</h3>
+            <ul class="hotel-list">
+                <li>⭐ Kabul Party Hostel</li>
+                <li>⭐⭐ Hotel Curious</li>
+                <li>⭐⭐⭐ Hotel Jazz</li>
+                <li>⭐⭐⭐⭐ Barceló Raval</li>
+                <li>⭐⭐⭐⭐⭐ W Barcelona</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>London Hotels</h3>
+            <ul class="hotel-list">
+                <li>⭐ Generator Hostel London</li>
+                <li>⭐⭐ easyHotel London</li>
+                <li>⭐⭐⭐ Premier Inn London City</li>
+                <li>⭐⭐⭐⭐ The Tower Hotel</li>
+                <li>⭐⭐⭐⭐⭐ The Ritz London</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section id="trips">
+    <h2>Popular European Trips</h2>
+    <div class="container">
+
+        <div class="card">
+            <h3>Paris & Switzerland (7 Days)</h3>
+            <p>Includes Eiffel Tower visit, Seine cruise, and Swiss Alps tour.</p>
+        </div>
+
+        <div class="card">
+            <h3>Italy Explorer (10 Days)</h3>
+            <p>Explore Rome, Florence, and Venice with guided tours.</p>
+        </div>
+
+        <div class="card">
+            <h3>Western Europe Tour (12 Days)</h3>
+            <p>France, Switzerland, Italy with city tours and scenic journeys.</p>
+        </div>
+
+        <div class="card">
+            <h3>UK & Ireland (8 Days)</h3>
+            <p>Discover London, Edinburgh, and Dublin highlights.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="packages">
+    <h2>Exclusive Travel Packages</h2>
+    <div class="container">
+
+        <div class="card">
+            <h3>Paris & Switzerland Escape</h3>
+            <p><strong>Duration:</strong> 7 Days / 6 Nights</p>
+            <p class="price">1,300 $ per person</p>
+            <p>Includes flights, 4⭐ hotels, Eiffel Tower visit, Swiss Alps tour.</p>
+            <button>Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Italy Grand Tour</h3>
+            <p><strong>Duration:</strong> 10 Days / 9 Nights</p>
+            <p class="price">1,900 $ per person</p>
+            <p>Rome, Florence, Venice with guided tours and premium stays.</p>
+            <button>Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Western Europe Highlights</h3>
+            <p><strong>Duration:</strong> 12 Days / 11 Nights</p>
+            <p class="price">₹2,300 $ per person</p>
+            <p>France, Switzerland & Italy with luxury hotels and sightseeing.</p>
+            <button>Book Now</button>
+        </div>
+
+        <div class="card">
+            <h3>UK & Ireland Explorer</h3>
+            <p><strong>Duration:</strong> 8 Days / 7 Nights</p>
+            <p class="price">₹1,600 $ per person</p>
+            <p>London, Edinburgh & Dublin with cultural experiences.</p>
+            <button>Book Now</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 European Travel Guide | Designed for Travelers</p>
+</footer>
+
+</body>
+</html>

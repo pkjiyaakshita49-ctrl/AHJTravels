@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rome</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #fbe4ef;
+    color: #000000;
+}
+
+/* NAVBAR */
+nav {
+    background: #ffd6ea;
+    color: rgb(0, 0, 0);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 22px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    background: url('IMAGES/romeinner.jpeg') no-repeat center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* CONTAINER */
+.container {
+    padding: 40px 60px;
+}
+
+/* SECTIONS */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: #000000;
+    border-left: 5px solid #ff84d6;
+    padding-left: 10px;
+}
+
+/* CARD */
+.card {
+    background: rgb(255, 181, 215);
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* LIST */
+ul {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>Travel Explorer</h1>
+    <ul>
+        <li>Home</li>
+        <li>Destinations</li>
+        <li>Packages</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <h2>Discover Rome - The Eternal City</h2>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <!-- OVERVIEW -->
+    <div class="section">
+        <h2>Trip Overview</h2>
+        <div class="card">
+            <p>
+                Explore Rome with this 5-day itinerary filled with ancient history, 
+                stunning architecture, and authentic Italian cuisine. Discover the 
+                charm of one of the world's most historic cities.
+            </p>
+        </div>
+    </div>
+
+    <!-- ITINERARY -->
+    <div class="section">
+        <h2>Travel Plan (5 Days)</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Day 1</h3>
+                <p>Arrival, hotel check-in, evening walk around Piazza Navona.</p>
+            </div>
+            <div class="card">
+                <h3>Day 2</h3>
+                <p>Visit Colosseum, Roman Forum, and Palatine Hill.</p>
+            </div>
+            <div class="card">
+                <h3>Day 3</h3>
+                <p>Explore Vatican City, St. Peter's Basilica, and Sistine Chapel.</p>
+            </div>
+            <div class="card">
+                <h3>Day 4</h3>
+                <p>Visit Trevi Fountain, Spanish Steps, and Pantheon.</p>
+            </div>
+            <div class="card">
+                <h3>Day 5</h3>
+                <p>Shopping, local markets, and departure.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MUST VISIT -->
+    <div class="section">
+        <h2>Must Visit Places</h2>
+        <div class="card">
+            <ul>
+                <li>Colosseum</li>
+                <li>Roman Forum</li>
+                <li>Vatican City</li>
+                <li>Trevi Fountain</li>
+                <li>Pantheon</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- TRAVEL DETAILS -->
+    <div class="section">
+        <h2>Travel Details</h2>
+        <div class="card">
+            <ul>
+                <li><strong>Best Time to Visit:</strong> April to June, September to October</li>
+                <li><strong>Currency:</strong> Euro (€)</li>
+                <li><strong>Language:</strong> Italian</li>
+                <li><strong>Transport:</strong> Metro, buses, taxis</li>
+                <li><strong>Visa:</strong> Schengen Visa required</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- COST -->
+    <div class="section">
+        <h2>Estimated Cost</h2>
+        <div class="card">
+            <ul>
+                <li>Flight: 550 $ - 800 $</li>
+                <li>Hotel (5 days): 450 $ - 1,000 $</li>
+                <li>Food & Activities: 250 $ - 500 $</li>
+                <li><strong>Total: 1,200 $ - 2,500 $</strong></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Travel Explorer | Designed for Your Dream Trips</p>
+</footer>
+
+</body>
+</html>

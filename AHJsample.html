@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AHJ Travels</title>
+
+<style>
+
+html{
+scroll-behavior: smooth;
+}
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+background:#fff5f7;
+color:#444
+}
+
+
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#faa4c6;
+color:rgb(0, 0, 0);
+position:sticky;
+top:0;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:rgb(2, 0, 0);
+font-weight:bold;
+}
+
+/* HERO CAROUSEL */
+
+.hero{
+height:90vh;
+position:relative;
+overflow:hidden;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+opacity:0;
+transition:opacity 1s ease-in-out;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:black;
+}
+
+.slide.active{
+opacity:1;
+}
+
+.slide h2{
+font-size:50px;
+}
+
+.slide button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:#fbd0e0;
+color:black;
+font-size:18px;
+cursor:pointer;
+border-radius:6px;
+
+
+.destinations button{
+margin-top:10px;
+padding:5px 15px;
+border:none;
+background:#fbd0e0;
+color:rgb(5, 0, 0);
+font-size:14px;
+cursor:pointer;
+border-radius:4px;
+}
+
+.destinations{
+padding:60px;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+overflow:hidden;
+height: 320px;
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+}
+
+
+
+.packages{
+padding:60px;
+background:white;
+text-align:center;
+transition:0.3s;
+}
+
+.package-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+margin-top:40px;
+}
+
+.package{
+background:#f4f4f4;
+padding:30px;
+border-radius:10px;
+width:250px;
+}
+
+.price{
+color:#fc86cf;
+font-size:22px;
+margin-top:10px;
+}
+
+
+.gallery{
+padding:60px;
+text-align:center;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
+margin-top:40px;
+}
+
+.gallery-grid img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+
+.contact{
+background:#fccde0;
+color:rgb(11, 0, 0);
+padding:60px;
+text-align:center;
+}
+
+.contact input,
+.contact textarea{
+width:80%;
+padding:10px;
+margin:10px;
+border:none;
+border-radius:5px;
+}
+
+.contact button{
+padding:10px 20px;
+border:none;
+background:#f994b4;
+color:rgb(2, 0, 0);
+cursor:pointer;
+}
+
+
+
+footer{
+background:#070000;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<h2>Explore Europe</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="AHJdestination.html">Destinations</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+
+
+<!-- HERO CAROUSEL -->
+
+<section class="hero">
+
+<div class="slide active" style="background:url('IMAGES/carousel4.jpeg')">
+    <div>
+        <h2>Discover Europe</h2>
+        <p>Your dream vacation starts here</p>
+        <a href="#"><button>Book Now</button></a>
+    </div>
+</div>
+
+<div class="slide" style="background:url('IMAGES/carousel5.jpeg')">
+    <div>
+        <h2>Discover Europe</h2>
+        <p>Your dream vacation starts here</p>
+        <a href="#"><button>Book Now</button></a>
+    </div>
+</div>
+
+<div class="slide" style="background:url('IMAGES/carousel3.jpeg')">
+    <div>
+        <h2>Discover Europe</h2>
+        <p>Your dream vacation starts here</p>
+        <a href="#"><button>Book Now</button></a>
+    </div>
+</div>
+
+</section>
+
+<!-- DESTINATIONS -->
+
+<section class="destinations" id="destinations">
+
+<h2>Popular Destinations</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="IMAGES/pariscover.jpeg">
+<h3>Paris</h3>
+<a href = "AHJParis.html">
+<button>Explore</button>
+</a>
+</div>
+
+<div class="card">
+<img src="IMAGES/romecover.jpeg">
+<h3>Rome</h3>
+<a href = "AHJRome.html">
+    <button>Explore</button>
+</a>
+</div>
+
+<div class="card">
+<img src="IMAGES/swisscover.jpeg">
+<h3>Switzerland</h3>
+<a href = "AHJSwiss.html">
+    <button>Explore</button>
+</a>
+</div>
+
+<div class="card">
+<img src="IMAGES/londoncover.jpeg">
+<h3>London</h3>
+<a href = "AHJLondon.html">
+    <button> Explore</button>
+</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- PACKAGES -->
+
+<section class="packages" id="packages">
+
+<h2>Travel Packages</h2>
+
+<div class="package-grid">
+
+<div class="package">
+<h3>Paris Tour</h3>
+<p>5 Days / 4 Nights</p>
+<div class="price">$899</div>
+</div>
+
+<div class="package">
+<h3>Italy Explorer</h3>
+<p>7 Days / 6 Nights</p>
+<div class="price">$1199</div>
+</div>
+
+<div class="package">
+<h3>Swiss Alps</h3>
+<p>6 Days / 5 Nights</p>
+<div class="price">$1099</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+<h2>Travel Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src = "IMAGES/galelry15.jpeg">
+<img src ="IMAGES/Gallery (2).jpeg">
+<img src ="IMAGES/Gallery.jpeg">
+<img src ="IMAGES/Gallery3.jpeg">
+<img src ="IMAGES/gallery4.jpeg">
+<img src ="IMAGES/gallery5.jpeg">
+<img src ="IMAGES/gallery6.jpeg">
+<img src ="IMAGES/gallery7.jpeg">
+<img src ="IMAGES/gallery8.jpeg">
+<img src ="IMAGES/gallery9.jpeg">
+<img src ="IMAGES/gallery10.jpeg">
+<img src ="IMAGES/gallery11.jpeg">
+<img src ="IMAGES/gallery12.jpeg">
+<img src ="IMAGES/gallery13.jpeg">
+<img src ="IMAGES/gallery14.jpeg">
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<input type="text" placeholder="Your Name"><br>
+<input type="email" placeholder="Your Email"><br>
+<textarea rows="4" placeholder="Message"></textarea><br>
+
+<button>Send Message</button>
+
+</section>
+
+
+<footer>
+<p>© 2026 Explore Europe</p>
+</footer>
+
+<!-- JAVASCRIPT FOR AUTO CAROUSEL -->
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide() {
+slides.forEach(slide => slide.classList.remove("active"));
+
+index++;
+if(index >= slides.length){
+index = 0;
+}
+
+slides[index].classList.add("active");
+}
+
+setInterval(showSlide, 5000);
+</script>
+
+</body>
+</html>
